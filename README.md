@@ -107,17 +107,16 @@ To start training the model, run the `train.py` script as a module:
 ```bash
 python -m going_modular.train
 This will start the training process, save model checkpoints to the models/ directory, and log results to the runs/ directory for TensorBoard.
-
-Monitoring with TensorBoard
-Open a new terminal and navigate to the project's root directory.
-
-Run the following command:
 ```
 
+
+
+#### Monitoring with TensorBoard
+Open a new terminal and navigate to the project's root directory.
+Run the following command:
 ```bash
 tensorboard --logdir=runs
 ```
-
 Open your web browser and go to http://localhost:6006/.
 
 
