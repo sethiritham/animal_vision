@@ -112,11 +112,14 @@ Monitoring with TensorBoard
 Open a new terminal and navigate to the project's root directory.
 
 Run the following command:
+```
 
-Bash
-
+```bash
 tensorboard --logdir=runs
+```
+
 Open your web browser and go to http://localhost:6006/.
+
 
 Future Improvements
 Experiment with different model architectures from torchvision.models (e.g., ResNet, EfficientNet).
