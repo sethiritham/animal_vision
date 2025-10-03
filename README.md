@@ -14,6 +14,8 @@ This Hugging Face Space is a live demo of a multi-class image classification mod
 
 This project follows a modular programming structure, making the code reusable and easy to understand. It also incorporates TensorBoard for experiment tracking and visualization.
 
+ **[Check out the live demo on Hugging Face Spaces!](https://huggingface.co/spaces/rizzam/animal-vision)**
+
 ## How to Use This Space
 
 1.  Upload an image of a dog, cat, elephant, horse, or lion using the interface.
