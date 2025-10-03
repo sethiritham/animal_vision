@@ -106,3 +106,26 @@ To start training the model, run the `train.py` script as a module:
 
 ```bash
 python -m going_modular.train
+This will start the training process, save model checkpoints to the models/ directory, and log results to the runs/ directory for TensorBoard.
+
+Monitoring with TensorBoard
+Open a new terminal and navigate to the project's root directory.
+
+Run the following command:
+
+Bash
+
+tensorboard --logdir=runs
+Open your web browser and go to http://localhost:6006/.
+
+Future Improvements
+Experiment with different model architectures from torchvision.models (e.g., ResNet, EfficientNet).
+
+Use a larger, more robust dataset.
+
+Implement more advanced data augmentation techniques.
+
+Fine-tune hyperparameters for better performance.
+
+Acknowledgements
+This project was built while following the incredible Zero to Mastery PyTorch for Deep Learning course by Daniel Bourke.
