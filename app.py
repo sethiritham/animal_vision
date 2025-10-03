@@ -7,8 +7,8 @@ from torchvision import datasets, transforms
 from pathlib import Path
 import os
 
-train_dir = Path(r"data\animals\train")
-examples_path = Path(r"data\animals\examples")
+train_dir = Path("data/animals/train")
+examples_path = Path("data/animals/examples")
 
 temp_data = datasets.ImageFolder(train_dir, transform=transforms.ToTensor())
 class_names = temp_data.classes
@@ -30,14 +30,14 @@ efficientnet_transform = transforms.Compose([
 tiny_vgg = TinyVGG(input_shape=3, 
                    output_shape=len(class_names), 
                    hidden_units=10)
-tiny_vgg.load_state_dict(torch.load(f=Path(r"C:\Users\Rizzam\Documents\CODES\Python\deep_learning\pytorch\animal_predictor\models\tiny_vgg_model.pth"), map_location=torch.device(device)))
+tiny_vgg.load_state_dict(torch.load(f=Path("models/tiny_vgg_model.pth"), map_location=torch.device(device)))
 tiny_vgg.to(device)
 
 weights = torchvision.models.EfficientNet_B0_Weights.DEFAULT
 efficientnet_b0 = torchvision.models.efficientnet_b0(weights=weights)
 
 efficientnet_b0.classifier[1] = nn.Linear(in_features=1280, out_features=len(class_names))
-efficientnet_b0.load_state_dict(torch.load(f=Path(r"C:\Users\Rizzam\Documents\CODES\Python\deep_learning\pytorch\animal_predictor\models\efficientnet_b0.pth"), map_location=torch.device(device)))
+efficientnet_b0.load_state_dict(torch.load(f=Path("models/efficientnet_b0.pth"), map_location=torch.device(device)))
 efficientnet_b0.to(device)
 
 
