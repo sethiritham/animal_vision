@@ -1,0 +1,13 @@
+# Datasets, logs, and saved models
+data/
+runs/
+models/
+
+# Python cache & virtual environment files
+__pycache__/
+*.pyc
+venv/
+.env
+
+# VS Code specific settings
+.vscode/
