@@ -106,8 +106,9 @@ To start training the model, run the `train.py` script as a module:
 
 ```bash
 python -m going_modular.train
-This will start the training process, save model checkpoints to the models/ directory, and log results to the runs/ directory for TensorBoard.
 ```
+This will start the training process, save model checkpoints to the models/ directory, and log results to the runs/ directory for TensorBoard.
+
 
 
 
