@@ -34,7 +34,7 @@ This project follows a modular programming structure, making the code reusable a
 ## Directory Structure
 
 The project is organized as follows:
-
+```
 ├── data/
 │   └── animals/
 │       ├── train/
@@ -62,7 +62,7 @@ The project is organized as follows:
 │   └── utils.py
 ├── app.py
 └── requirements.txt
-
+```
 
 ## How to Run Locally
 
