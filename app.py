@@ -10,7 +10,7 @@ from model_builder import TinyVGG
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 CLASS_NAMES = ['cat', 'dog', 'elephant', 'horse', 'lion']
-EXAMPLES_PATH = Path("examples")
+EXAMPLES_PATH = Path("data/animals/examples")
 
 
 def load_models_and_transforms():
@@ -92,4 +92,4 @@ demo = gr.Interface(
     flagging_mode="never" 
 )
 
-demo.launch()
+demo.launch(share= True)
